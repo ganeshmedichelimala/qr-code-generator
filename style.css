@@ -1,0 +1,103 @@
+/* Resetting default margin, padding, box-sizing, and setting font for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+/* Styling for the overall page body */
+body {
+  background: #262a2f;
+}
+
+/* Styling for the main container */
+.container {
+  width: 400px;
+  padding: 25px 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Styling for paragraphs within the container */
+.container p {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* Styling for input fields within the container */
+.container input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid  #494eea;
+  outline: 0;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border-radius: 5px; 
+}
+
+/* Styling for buttons within the container */
+.container button {
+  width: 100%;
+  height: 50px;
+  background: #494eea;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+/* Styling for an image container */
+#imgBox {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+/* Styling for images within the image container */
+#imgBox img {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Styling for showing the image container */
+#imgBox.showImg {
+  max-height: 300px;
+  margin: 10px auto;
+  border: 2px solid #d1d1d1;
+}
+
+/* Styling for an error animation */
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+/* Keyframes for the error shake animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
